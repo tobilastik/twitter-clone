@@ -1,4 +1,4 @@
-import Image from '../assets/images/avatar.jpeg';
+import Image from '../assets/images/media.jpg';
 
 export const trendingData = [
   {

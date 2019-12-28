@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import logo from '../assets/images/logo.png';
+import {Link} from 'react-router-dom';
 
 export default class Sidebar extends Component {
   render () {
@@ -9,14 +10,28 @@ export default class Sidebar extends Component {
 
         <div className="sidebar-item">
 
-          <i className="fa fa-home sidebar-logo checked"> Home</i>
-          <i className="fa fa-hashtag sidebar-logo"> Explore</i>
-          <i className="far fa-bell sidebar-logo"> Notifications</i>
-          <i className="far fa-envelope sidebar-logo"> Message</i>
-          <i className="far fa-bookmark sidebar-logo"> Bookmarks</i>
-          <i className="fa fa-list-alt sidebar-logo"> Lists</i>
-          <i className="far fa-user sidebar-logo"> Profile</i>
-          <i className="fa fa-list sidebar-logo"> More</i>
+          <Link to="/" className="fa fa-home sidebar-logo checked">
+            <p>Home</p>
+          </Link>
+          <Link to="/" className="fa fa-hashtag sidebar-logo">
+            {' '}<p>Explore</p>
+          </Link>
+          <Link to="/" className="far fa-bell sidebar-logo">
+            <p>Notifications</p>
+          </Link>
+          <Link to="/" className="far fa-envelope sidebar-logo">
+            {' '}<p>Messages</p>
+          </Link>
+          <Link to="/" className="far fa-bookmark sidebar-logo">
+            <p>Bookmarks</p>
+          </Link>
+          <Link to="/" className="fa fa-list-alt sidebar-logo">
+            {' '}<p>Lists</p>
+          </Link>
+          <Link to="/" className="far fa-user sidebar-logo">
+            {' '}<p>Profile</p>
+          </Link>
+          <Link to="/" className="fa fa-list sidebar-logo"> <p>More</p></Link>
 
           <a href="/" className="tweet-button">Tweet</a>
         </div>

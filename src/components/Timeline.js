@@ -12,7 +12,11 @@ export default class Timeline extends Component {
         {data.map (tweet => {
           return (
             <div className="tweets-timeline">
-              <img src={tweet.avatar} className="timeline-avatar" />
+              <img
+                src={tweet.avatar}
+                className="timeline-avatar"
+                alt="Timeline Avatar"
+              />
               <div className="timeline-name">
                 <h3>{tweet.name}</h3>
                 <h5>{tweet.handle}</h5>
@@ -20,7 +24,18 @@ export default class Timeline extends Component {
 
               <div>
                 {tweet.tweets}
-                <img src={tweet.image} className="timeline-media" />
+                <img
+                  src={tweet.image}
+                  className="timeline-media"
+                  alt="Timeline Avatar"
+                />
+              </div>
+              <div className="tweets-actionbtn">
+                <i className="far fa-comment" />
+                <i className="fas fa-retweet" />
+                <i className="far fa-heart" />
+                <i className="far fa-share-square" />
+                {/* <i class="fas fa-chevron-down" /> */}
               </div>
 
             </div>
